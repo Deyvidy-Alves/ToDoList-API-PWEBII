@@ -1,0 +1,51 @@
+.cadastro {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 48px;
+}
+
+.cadastro__steps {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.cadastro__step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  font-size: 13px;
+}
+
+.cadastro__step-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  font-size: 12px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.cadastro__step--done .cadastro__step-num { background: var(--accent); border-color: var(--accent); color: #fff; }
+.cadastro__step--active .cadastro__step-num { border-color: var(--accent); color: var(--accent); }
+.cadastro__step--todo { color: var(--text-muted); }
+.cadastro__step--todo .cadastro__step-num { color: var(--text-muted); }
+
+.cadastro__sub { font-size: 14px; color: var(--text-muted); margin: 4px 0 24px; }
+
+.cadastro__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.cadastro__actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+}
