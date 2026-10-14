@@ -1,0 +1,33 @@
+.abas {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 16px;
+}
+
+.aba {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted);
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+}
+.aba.is-active { color: var(--text); border-bottom-color: var(--accent); }
+
+.aba__count {
+  font-size: 12px;
+  background: var(--surface-alt);
+  border-radius: 999px;
+  padding: 1px 8px;
+}
+.aba.is-active .aba__count { background: var(--accent-soft); color: var(--accent); }
+
+.inscricoes__footer {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 12px;
+}

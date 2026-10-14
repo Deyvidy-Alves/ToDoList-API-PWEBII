@@ -1,0 +1,32 @@
+.curso-cover {
+  position: relative;
+  height: 200px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    repeating-linear-gradient(135deg, #EEE9E1 0 10px, transparent 10px 20px),
+    #F4F3EF;
+  margin-bottom: 20px;
+}
+.curso-cover__ini { font-family: var(--font-display); font-size: 88px; font-weight: 600; color: var(--text-muted); }
+.curso-cover__chip { position: absolute; top: 16px; right: 16px; }
+
+.curso-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.curso-head__sub { color: var(--text-muted); margin-top: 4px; }
+.curso-head__actions { display: flex; gap: 10px; flex-shrink: 0; }
+
+.curso-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.curso-stats--2 { grid-template-columns: repeat(2, 1fr); max-width: 520px; }
