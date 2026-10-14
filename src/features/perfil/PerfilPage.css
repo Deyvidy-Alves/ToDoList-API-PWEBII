@@ -1,0 +1,23 @@
+.perfil-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.perfil-top { display: flex; gap: 16px; align-items: center; }
+.perfil-top__info { flex: 1; }
+.perfil-nome { font-size: 20px; font-weight: 600; font-family: var(--font-display); }
+.perfil-email { color: var(--text-muted); }
+
+.perfil-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+  font-size: 13px;
+}
+.perfil-meta__muted { color: var(--text-muted); }
+
+.perfil-actions { display: flex; gap: 10px; }
