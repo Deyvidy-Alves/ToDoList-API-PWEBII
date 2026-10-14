@@ -1,0 +1,19 @@
+.aluno-inscrito {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: var(--radius-md);
+  background: var(--status-deferred-bg);
+  color: var(--status-deferred);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.confirm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.confirm-grid dt { font-size: 12px; color: var(--text-muted); }
+.confirm-grid dd { font-size: 14px; font-weight: 500; margin-top: 2px; }

@@ -1,0 +1,22 @@
+.aluno-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.aluno-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-align: left;
+  padding: 24px;
+  background: var(--surface-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: border-color 0.12s, box-shadow 0.12s;
+}
+.aluno-card:hover { border-color: var(--border-strong); box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05); }
+
+.aluno-card__body { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.aluno-card__title { font-size: 18px; font-weight: 600; font-family: var(--font-display); }
+.aluno-card__sub { font-size: 13px; color: var(--text-muted); }
